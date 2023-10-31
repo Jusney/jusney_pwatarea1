@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja con Slider</title>
+    <style>
+        /* Estilos para la caja */
+        .caja {
+            width: 300px; /* Ancho de la caja */
+            height: 200px; /* Alto de la caja */
+            border: 2px solid #333; /* Borde de 2 píxeles de ancho, color gris */
+            background-color: #78e9e3; /* Fondo celeste */
+            display: flex; /* Para centrar contenido verticalmente */
+            justify-content: center; /* Para centrar contenido horizontalmente */
+            align-items: center; /* Para centrar contenido verticalmente */
+        }
+
+        /* Estilos para el slider */
+        input[type="range"] {
+            width: 80%; /* Ancho del slider */
+        }
+
+        /* Estilos para el texto en el centro */
+        p {
+            text-align: center; /* Centrar el texto */
+            font-size: 20px; /* Tamaño del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <!-- Slider -->
+        <input type="range" min="0" max="100" step="1" value="50">
+    </div>
+    <p>HAPPY BIRTHDAY <i class="fa fa-birthday-cake" aria-hidden="true"></i></p>
+</body>
+</html>
